@@ -53,24 +53,24 @@
         let downb = document.getElementById("down")
         let rightb = document.getElementById("right")
         let leftb = document.getElementById("left")
-        var dx = 0.25
+        var dx = 25
         var pos = [0, 0, 0]
 
         downb.onclick = () => {
             pos[2] -= dx            
-            obj.setAttribute('position', `${pos[0]} ${pos[1]} ${pos[2]}`)
+            obj.setAttribute('rotation', `${pos[0]} ${pos[1]} ${pos[2]}`)
         }
         upb.onclick = () => {
             pos[2] += dx
-            obj.setAttribute('position', `${pos[0]} ${pos[1]} ${pos[2]}`)
+            obj.setAttribute('rotation', `${pos[0]} ${pos[1]} ${pos[2]}`)
         }
         rightb.onclick = () => {
             pos[0] -= dx
-            obj.setAttribute('position', `${pos[0]} ${pos[1]} ${pos[2]}`)
+            obj.setAttribute('rotation', `${pos[0]} ${pos[1]} ${pos[2]}`)
         }
         leftb.onclick = () => {
             pos[0] += dx;
-            obj.setAttribute('position', `${pos[0]} ${pos[1]} ${pos[2]}`)
+            obj.setAttribute('rotation', `${pos[0]} ${pos[1]} ${pos[2]}`)
         }
       </script>
   </html>
